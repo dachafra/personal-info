@@ -173,7 +173,7 @@ a:hover, a:active, a:focus {
    background-size: cover;
 }
 .timeline-item:nth-child(15) .timeline-img-header {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://github.com/dachafra/dachafra.github.io/blob/master/img/2017.jpg?raw=true") center center no-repeat;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://github.com/dachafra/persona-info/blob/master/img/2017.jpg?raw=true") center center no-repeat;
   background-size: cover;
 }
 .timeline-item:nth-child(17) .timeline-img-header {
