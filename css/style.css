@@ -189,6 +189,36 @@ a:hover, a:active, a:focus {
   background-size: contain;
 }
 
+.timeline-item:nth-child(24) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://pbs.twimg.com/media/DqWP4QHWkAEGdbE.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-item:nth-child(29) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://pbs.twimg.com/media/D0fnPi4XQAAZpdK.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-item:nth-child(30) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://pbs.twimg.com/media/D_QqHGYVUAEoIm7.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-item:nth-child(31) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://pbs.twimg.com/media/D8PVGxwVUAAhov2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-item:nth-child(34) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://pbs.twimg.com/media/D8DeokEWsAA4QGn.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-item:nth-child(35) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://pbs.twimg.com/media/D_58iemWkAA84Q7.jpg") center center no-repeat;
+  background-size: cover;
+}
+
 
 
 .timeline-img-header {
