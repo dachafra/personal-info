@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XSLZ5KXLP0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XSLZ5KXLP0');
+    </script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="David Chaves Fraga" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>David Chaves-Fraga Website</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css" /> -->
+    <link rel="stylesheet" href="../assets/css/all.css" />
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="../assets/css/owl.css" />
+    <link rel="stylesheet" href="../assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div class="bg-light" id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="../assets/images/dchaves.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>David Chaves-Fraga</h4>
+              <span><h6>Assistant Professor</h6></span>
+              <p>
+              <a href="https://www.usc.gal/en">USC</a><br>
+              <a href="https://citius.gal/">CiTIUS@USC</a><br>
+              <a href="https://dtai.cs.kuleuven.be/">DTAI@KULeuven</a><br>
+              
+              <span><h7>david.chaves at usc.es</h7></span></p>
+
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="https://davidchavesfraga.com/#section1">Home</a></li>
+                <li><a href="https://davidchavesfraga.com/#section2">Publications</a></li>
+                <li><a href="https://davidchavesfraga.com/#section3">Talks</a></li>
+                <li><a href="https://davidchavesfraga.com/#section4">Community</a></li>
+                <li><a href="https://davidchavesfraga.com/#section5">Projects</a></li>
+              </ul>
+              <ul class="second-menu" id="external-links">
+                <li><a href="">Blog</a></li>
+                <li><a href="./phd/index.html">PhD Timeline</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="social-icons">
+                <li>
+                  <a href="https://twitter.com/dchavesf"><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/dachafra"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/david-chaves-fraga"><i class="fa fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.es/citations?user=VCMjf-AAAAAJ"><i class="fa fa-google"></i></a>
+                </li>
+              
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright 2019 Reflux Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me">
+        <div class="container text-dark">
+          <div class="section-heading">
+            <h1>Calculating Transparency Indicators with SPARQL for<br> the EU Public Procurement Data Space</h1>
+            <div class="line-dec"></div>
+            
+<p class="text-justify">The <a href="https://single-market-economy.ec.europa.eu/single-market/public-procurement/digital-procurement/public-procurement-data-space-ppds_en">EU Public Procurement Data Space (PPDS)</a> has the main goal of providing a standard access point to public contracting data on a European level. For that semantic technologies (ontologies, knowledge graphs) will be used for integrating said information in a consensual way and following good practices for data publishing on the web. Once the data model and the data transformation processes have been developed, the information will be analyzed, and implemented for example data visualizers to facilitate the comprehension or the calculation of indicators. </p>
+<p class="text-justify">Once the data is integrated and accessible in the form of an RDF graph, the data needs to be exploited using SPARQL queries. One of the most relevant tasks of the PPDS is the ability to calculate a set of EU transparency indicators using these data. These are analytical queries that need to execute aggregation operations such as SUM, COUNT, and AVG. These tasks have not been widely studied in the research literature and we still do not know what would be the behavior of the different triplestores running them. Hence, the first task we perform and the results reported in this document are related to the systematic study of the benchmarking of RDF triplestores over aggregated SPARQL queries. </p>
+
+<p class="text-justify">We present the results of evaluating the performance and scalability of query execution for a <a href="https://single-market-scoreboard.ec.europa.eu/business-framework-conditions/public-procurement_en">set of transparency indicators</a> over public procurement RDF data. We describe how we construct the dataset for the evaluation, what queries and indicators are used, and finally, the engines, metrics, and setup chosen. We report the obtained results which will help to decide and select the triplestore that better fits for answering analytical queries over RDF public procurement graphs.</p>
+
+<h3 class="text-left" id="dataset-construction">Dataset construction</h3>
+<p class="text-justify">The dataset is constructed using the CODICE datasets provided by the <a href="https://www.hacienda.gob.es/">Spanish Ministry of Finance</a>. These datasets were previously used during the PPDS proof of concept in December 2022 and <a href="https://www.hacienda.gob.es/en-GB/GobiernoAbierto/Datos%20Abiertos/Paginas/LicitacionesContratante.aspx">are openly available</a>. We select all data sources from 2018 until 2022. We transform (using RML mappings and the <a href="https://github.com/RMLio/rmlmapper-java">RMLMapper engine</a>) these input sources into an integrated knowledge graph per year. We manually clean the output knowledge graph for duplicate removal using basic bash scripts, as it is not efficiently implemented in the RMLMapper tool, and RDF is composed of a set of triples (it does not allow duplicates). The size of the used datasets (in XML and in RDF) is shown in Table 1.</p>
+    <center>
+    Table 1: Dataset metrics. RDF size is shown using N-Triples as RDF serialization
+    <table class="table table-hover">
+      <thead class="thead-light">
+      <tr>
+       <th><strong>Year</strong>
+       </th>
+       <th><strong>Number of <br>XML Documents</strong>
+       </th>
+       <th><strong>Total XML Size</strong>
+       </th>
+       <th><strong>Total RDF Size<br>(with duplicates)</strong></th>
+       <th><strong>Total RDF Size <br>(w/o duplicates)</strong></th>
+      </tr>
+      </thead>
+      <tr>
+       <td>2018
+       </td>
+       <td>314
+       </td>
+       <td>3.3 GB
+       </td>
+       <td>2.0 GB
+       </td>
+       <td>344 MB
+       </td>
+      </tr>
+      <tr>
+       <td>2019
+       </td>
+       <td>479
+       </td>
+       <td>5.4 GB
+       </td>
+       <td>3.0 GB
+       </td>
+       <td>504 MB
+       </td>
+      </tr>
+      <tr>
+       <td>2020
+       </td>
+       <td>522
+       </td>
+       <td>5.1 GB
+       </td>
+       <td>2.7 GB
+       </td>
+       <td>540 MB
+       </td>
+      </tr>
+      <tr>
+       <td>2021
+       </td>
+       <td>700
+       </td>
+       <td>6.7 GB
+       </td>
+       <td>3.9 GB
+       </td>
+       <td>693 MB
+       </td>
+      </tr>
+      <tr>
+       <td>2022
+       </td>
+       <td>883
+       </td>
+       <td>10 GB
+       </td>
+       <td>5.3G
+       </td>
+       <td>832 MB
+       </td>
+      </tr>
+    </table>
+    </center>
+
+<p class="text-justify">As one of the main objectives of this task is to test the performance and scalability of the triplestores when aggregated queries are executed, we combine the RDF graphs previously created for generating bigger datasets. Table 2 shows the total size of each RDF graph as well as its total number of triples. We construct the different datasets incrementally, i.e. starting from 2018, we combined the triples from the following years to increase the size of the graph and study the impact of querying historical data. For example, the dataset 2018-2021, includes all triples from 2018, 2019, 2020, and 2021.</p>
+<center>
+Table 2: Dataset metrics after their construction. Size RDF is shown using N-Triples serialization
+<table class="table table-hover">
+  <thead class="thead-light">
+  <tr>
+   <th><strong>Datasets</strong>
+   </th>
+   <th><strong>Total Size (RDF)</strong>
+   </th>
+   <th><strong>Number of Triples</strong>
+   </th>
+  </tr>
+</thead>
+  <tr>
+   <td>2018
+   </td>
+   <td>344 MB
+   </td>
+   <td>1,533,314
+   </td>
+  </tr>
+  <tr>
+   <td>2019
+   </td>
+   <td>504 MB
+   </td>
+   <td>2,245,997
+   </td>
+  </tr>
+  <tr>
+   <td>2020
+   </td>
+   <td>540 MB
+   </td>
+   <td>2,412,750
+   </td>
+  </tr>
+  <tr>
+   <td>2021
+   </td>
+   <td>693 MB
+   </td>
+   <td>3,096,404
+   </td>
+  </tr>
+  <tr>
+   <td>2022
+   </td>
+   <td>832 MB
+   </td>
+   <td>3,707,545
+   </td>
+  </tr>
+  <tr>
+   <td>2018-2019
+   </td>
+   <td>847 MB
+   </td>
+   <td>3,779,311
+   </td>
+  </tr>
+  <tr>
+   <td>2018-2020
+   </td>
+   <td>1.4 GB
+   </td>
+   <td>6,192,061
+   </td>
+  </tr>
+  <tr>
+   <td>2018-2021
+   </td>
+   <td>2.1 GB
+   </td>
+   <td>9,288,465
+   </td>
+  </tr>
+  <tr>
+   <td>2018-2022
+   </td>
+   <td>2.9 GB
+   </td>
+   <td>12,996,010
+   </td>
+  </tr>
+</table>
+</center>
+
+<h3 class="text-left" id="queries">Queries</h3>
+<p class="text-justify">The queries used for running the experimental evaluation are an enhanced version of the queries for indicators 1, 6, and 9 developed during the PPDS proof of concept in December 2022. We have removed unnecessary triple patterns and data fields that were retrieved in the SELECT clauses. We have removed some of the subqueries that were unnecessary. The updated queries can be found in the Gitlab of the project (link soon). </p>
+<p class="text-justify">Additionally, to study the impact of querying external resources, we incorporate a new version of each query, removing the SERVICE clause that retrieved data from the <a href="http://publications.europa.eu/webapi/rdf/sparql">authority tables of the publication office</a>. In contrast, we upload locally the necessary RDF graph to obtain the same results. Hence, each query has two different versions (e.g., indicator1_local.rq and indicator1_service.rq).</p>
+
+
+<div class="text-left" class="w3-example ws-light-grey">
+<pre><code class="sparql">
+PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX legal: &lt;https://www.w3.org/ns/legal#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX pocgraph: &lt;http://data.europa.eu/a4g/graph/ppds-poc/&gt;
+
+SELECT DISTINCT ?countryID ?year ?amountLots ?numSingleBidders ((?indicator/100) AS ?indicator1) WHERE {
+  {
+    SELECT DISTINCT ?countryID ?year ?amountLots ?numSingleBidders 
+                    ((xsd:float(xsd:float(?numSingleBidders)/xsd:float(?amountLots))*100) AS ?indicator) WHERE {
+    {
+      SELECT DISTINCT ?countryID ?year (COUNT(DISTINCT ?lot) AS ?amountLots) 
+                      (SUM(if(?bidders = "single-bidder", 1, 0)) AS ?numSingleBidders) WHERE {
+
+        ?proc a epo:Procedure .
+        ?proc epo:hasProcedureType ?p .
+        FILTER ( ?p != &lt;http://publications.europa.eu/resource/authority/procurement-procedure-type/neg-wo-call&gt;)
+        ?proc epo:hasProcurementScopeDividedIntoLot ?lot .
+
+        ?statistic a epo:SubmissionStatisticalInformation .
+        ?statistic epo:concernsSubmissionsForLot ?lot .
+        ?statistic epo:hasReceivedTenders ?c .
+        BIND(IF(?c = 1,"single-bidder","multiple-bidders") AS ?bidders) .
+
+        ?resultnotice a epo:ResultNotice .
+        ?resultnotice epo:refersToProcedure ?proc .
+        ?resultnotice epo:hasDispatchDate ?ddate .
+        BIND(year(xsd:date(?ddate)) AS ?year) .
+
+        ?resultnotice epo:refersToRole ?buyerrole .
+
+        {
+          SELECT DISTINCT ?buyerrole ?countryID WHERE {
+            ?buyerrole epo:playedBy ?org .
+            ?org legal:registeredAddress ?orgaddress .
+            ?orgaddress epo:hasCountryCode ?countrycode  .
+            ?countrycode dc:identifier ?countryID .
+
+            ?org epo:hasBuyerType ?buytype .
+            FILTER (?buytype != &lt;http://publications.europa.eu/resource/authority/buyer-legal-type/eu-int-org&gt; )
+            }    
+          }
+        } GROUP BY ?countryID ?year ORDER BY ?countryID ?year  }
+      }
+    }
+  }
+</code></pre>
+<p>Query 1: Example of a local query to calculate the amount of contracts that have a single bidder</p>
+
+</div>
+
+<h3 class="text-left" id="engines">Engines</h3>
+<p class="text-justify">We use the free version of GraphDB (v10.2.1), the open-source Jena Fuseki (v4.8.0), and the community version of Virtuoso (v7.2.1). All triplestores are configured to store the graph in physical memory. We performed previous experiments over Jena Fuseki in its in-memory configuration, but the performance is highly impacted, so we decided to not take into account. Each engine has different function implementations that are used for some of the queries used in the benchmark. For example, for calculating the difference between two dates, GraphDB uses the function <a href="http://www.ontotext.com/sparql/functions/days-from-duration">ofn:days-from-duration</a>, Jena Fuseki is able to parse <a href="http://www.w3.org/2005/xpath-functions#days-from-duration">fn:days-from-duration</a>, while in Virtuoso a simple rest operation works ((?date1-?date2)/(3600*24)). </p>
+<p class="text-justify">We tried to incorporate the <a href="https://github.com/the-qa-company/qEndpoint">qEndpoint engine</a>, used by the Kohesio platform, but we found that the engine has important performance bugs for aggregated queries, see <a href="https://github.com/the-qa-company/qEndpoint/discussions/413">the discussion</a>. So at this moment, we do not recommend its use for the PPDS.</p>
+<h3 class="text-left" id="metrics-and-setup">Metrics and Setup</h3>
+<p class="text-justify">We measure <span style="text-decoration:underline;">query execution time</span> as the total time from query execution until the complete answer is generated. We also report the geometric mean of all queries that generate graphs in the same metadata representation. The <span style="text-decoration:underline;">geometric mean</span> reports the central tendency of all execution times for a set of queries, reducing the effect of outliers. With this metric, we provide a general measurement of the performance of each triplestore when generating graphs in each representation. We run every experiment 5 times with a timeout of 24h, measure the time, and calculate the median. We run all experiments over an Ubuntu 20.04 server with 32 cores Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 102400 Mb RAM RDIMM, 3200 MT/s and 100 Gb HD SSD 6 Gb/s. </p>
+<h3 class="text-left" id="results">Results</h3>
+<p class="text-justify">Figure 1 reports the geometric mean of all queries over each dataset (including queries with local and federated access). We observe that Virtuoso obtains better results in terms of execution time for all datasets. This means that, in general, Virtuoso outperforms Fuseki and GraphDB for all queries and dataset configurations. We also observe that the increase in the dataset size impacts the performance of the engines. For example, Virtuoso outputs 0,114 seconds as the geometric mean for the 2018 dataset, while the time is increased to 2,221 seconds for the 2018-2022 dataset. GraphDB, and mostly Fuseki, are highly impacted by the increasing of the dataset performance. Fuseki results in 64,007 seconds as the geometric mean for the 2018-2022 dataset. GraphDB reports better results, but in general, the performance is not comparable to the results obtained by Virtuoso. </p>
+<center>
+
+    <p><img src="ppds/results_1.png" alt="alt_text" title="image_tooltip"></p>
+    <p>Figure 1: Geometric mean of all queries over each dataset</p>
+</center>
+<p class="text-justify">For a more fine-grained analysis of the results, we show the results of Virtuoso for each query in Figure 2. The median of the 5 executions is reported. The first observation is that the dependency on external resources such as the Publication Office SPARQL endpoint, in this case, has a clear impact on all queries. For all configurations, the query version that depends on external resources (i.e. qX_opt, where X is the indicator number) reports always worse performance than the ones that retrieve these answers from a local graph (i.e. qX_opt_local, where X is the indicator number). </p>
+<center>
+    <p><img src="ppds/results_2.png" alt="alt_text" title="image_tooltip"></p>
+    <p>Figure 2: Execution time of each query and dataset over Virtuoso</p>
+  </center>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/lightbox.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="ppds/sparql.js"></script>
+    <script type="text/javascript">hljs.highlightAll();</script>
+    <script>
+      //according to loftblog tut
+      $(".second-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+
+
+      
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+      
+    </script>
+  </body>
+</html>
