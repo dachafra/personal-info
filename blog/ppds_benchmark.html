@@ -71,7 +71,7 @@ https://templatemo.com/tm-531-reflux
                 <li><a href="https://davidchavesfraga.com/#section5">Projects</a></li>
               </ul>
               <ul class="second-menu" id="external-links">
-                <li><a href="">Blog</a></li>
+                <li><a href="https://davidchavesfraga.com/#section6">Blog</a></li>
                 <li><a href="./phd/index.html">PhD Timeline</a></li>
               </ul>
             </nav>
@@ -192,6 +192,7 @@ https://templatemo.com/tm-531-reflux
 
 <p class="text-justify">As one of the main objectives of this task is to test the performance and scalability of the triplestores when aggregated queries are executed, we combine the RDF graphs previously created for generating bigger datasets. Table 2 shows the total size of each RDF graph as well as its total number of triples. We construct the different datasets incrementally, i.e. starting from 2018, we combined the triples from the following years to increase the size of the graph and study the impact of querying historical data. For example, the dataset 2018-2021, includes all triples from 2018, 2019, 2020, and 2021.</p>
 <center>
+<div class="col-md-8">
 Table 2: Dataset metrics after their construction. Size RDF is shown using N-Triples serialization
 <table class="table table-hover">
   <thead class="thead-light">
@@ -278,7 +279,7 @@ Table 2: Dataset metrics after their construction. Size RDF is shown using N-Tri
   </tr>
 </table>
 </center>
-
+</div>
 <h3 class="text-left" id="queries">Queries</h3>
 <p class="text-justify">The queries used for running the experimental evaluation are an enhanced version of the queries for indicators 1, 6, and 9 developed during the PPDS proof of concept in December 2022. We have removed unnecessary triple patterns and data fields that were retrieved in the SELECT clauses. We have removed some of the subqueries that were unnecessary. The updated queries can be found in the Gitlab of the project (link soon). </p>
 <p class="text-justify">Additionally, to study the impact of querying external resources, we incorporate a new version of each query, removing the SERVICE clause that retrieved data from the <a href="http://publications.europa.eu/webapi/rdf/sparql">authority tables of the publication office</a>. In contrast, we upload locally the necessary RDF graph to obtain the same results. Hence, each query has two different versions (e.g., indicator1_local.rq and indicator1_service.rq).</p>
