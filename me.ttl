@@ -1,0 +1,36 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>. 
+
+<https://investigacion.usc.gal/grupos/4637/detalle> a schema:Organization,
+        foaf:Group;
+    schema:member <https://davidchavesfraga.com>;
+    foaf:homePage <https://investigacion.usc.gal/grupos/4637/detalle>;
+    foaf:member <https://davidchavesfraga.com>;
+    foaf:title "Grupo de Sistemas Inteligentes - USC"@es .
+
+<https://davidchavesfraga.com> a schema:Organization,
+        foaf:Group;
+    schema:member <https://davidchavesfraga.com>;
+    foaf:homePage <https://citius.gal/>;
+    foaf:member <https://davidchavesfraga.com>;
+    foaf:title "Centro Singular de Investigación en Tecnologías Inteligentes"@es .
+
+<https://davidchavesfraga.com> a dc:Agent,
+        schema:Person,
+        prov:Person,
+        foaf:Person;
+  rdfs:label "David Chaves-Fraga";
+    schema:alumniOf <http://dbpedia.org/resource/Technical_University_of_Madrid>,
+        <http://dbpedia.org/resource/University_of_Santiago_de_Compostela>;
+    schema:image <https://davidchavesfraga.com/assets/images/dchaves.jpg>;
+    schema:mail <mailto:david.chaves@usc.es>;
+    schema:name "David Chaves-Fraga";
+    schema:worksFor <https://investigacion.usc.gal/grupos/4637/detalle>, <https://citius.gal/>;
+    foaf:img "https://davidchavesfraga.com/assets/images/dchaves.jpg";
+    foaf:mbox <mailto:david.chaves@usc.es>;
+    foaf:name "David Chaves-Fraga";
+    foaf:publications <https://scholar.google.es/citations?user=VCMjf-AAAAAJ> .
