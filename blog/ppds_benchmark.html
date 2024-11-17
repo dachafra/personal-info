@@ -22,6 +22,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+      .hljs-keyword {
+            color: #cf222e;
+            font-weight: bold;
+        }
+        .hljs-variable {
+            color: #0550ae;
+        }
+        .hljs-uri {
+            color: #0a3069;
+        }
+        .hljs-prefix {
+            color: #953800;
+            font-weight: bold;
+        }
+        .hljs-function {
+            color: #8250df;
+        }
+        .hljs-operator {
+            color: #CF222E;
+        }
+        .hljs-builtin {
+            color: #0550ae;
+            font-weight: bold;
+        }
+        .hljs-string {
+            color: #24292f;
+        }
+    </style>
 
 
     <title>David Chaves-Fraga Website</title>
@@ -286,8 +315,7 @@ Table 2: Dataset metrics after their construction. Size RDF is shown using N-Tri
 
 
 <div class="text-left" class="w3-example ws-light-grey">
-<pre><code class="sparql">
-PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;
+<pre><code class="language-sparql">PREFIX epo: &lt;http://data.europa.eu/a4g/ontology#&gt;
 PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
 PREFIX legal: &lt;https://www.w3.org/ns/legal#&gt;
 PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
@@ -373,12 +401,18 @@ SELECT DISTINCT ?countryID ?year ?amountLots ?numSingleBidders ((?indicator/100)
     <script src="../assets/js/owl-carousel.js"></script>
     <script src="../assets/js/lightbox.js"></script>
     <script src="../assets/js/custom.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="../assets/js/sparql-highlight.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- and it's easy to individually load additional languages -->
-    <script src="ppds/sparql.js"></script>
-    <script type="text/javascript">hljs.highlightAll();</script>
+    
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+            registerSPARQL(hljs);
+            hljs.highlightAll();
+        });
+    </script>
     <script>
       //according to loftblog tut
       $(".second-menu li:first").addClass("active");
