@@ -12,8 +12,8 @@
     foaf:member <https://davidchavesfraga.com>;
     foaf:title "Grupo de Sistemas Inteligentes - USC"@es .
 
-<https://davidchavesfraga.com> a schema:Organization,
-        foaf:Group;
+<https://citius.gal/> a schema:Organization,
+        foaf:Organization;
     schema:member <https://davidchavesfraga.com>;
     foaf:homePage <https://citius.gal/>;
     foaf:member <https://davidchavesfraga.com>;
