@@ -30,6 +30,7 @@
     schema:mail <mailto:david.chaves@usc.es>;
     schema:name "David Chaves-Fraga";
     schema:worksFor <https://investigacion.usc.gal/grupos/4637/detalle>, <https://citius.gal/>;
+    owl:sameAs <https://citius.gal/gl/team/david-chaves-fraga/> , <https://www.usc.gal/es/departamento/electronica-computacion/directorio/david-chaves-fraga-335746>, <https://investigacion.usc.gal/investigadores/844844/detalle> ; 
     foaf:img "https://davidchavesfraga.com/assets/images/dchaves.jpg";
     foaf:mbox <mailto:david.chaves@usc.es>;
     foaf:name "David Chaves-Fraga";
