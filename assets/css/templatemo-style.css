@@ -750,6 +750,16 @@ section.contact-me {
 
 }
 
+.my-alumni .card {
+    min-height: 190px; /* ajusta al tamaño que quieras */
+
+}
+
+.my-alumni .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra verticalmente */
+}
 .menu .container {
     padding-left: 0;
     padding-right: 0;
