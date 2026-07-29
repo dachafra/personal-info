@@ -41,27 +41,32 @@ https://templatemo.com/tm-531-reflux
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="bg-light" id="page-wraper">
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
+        <button type="button" id="menu-toggle" aria-label="Open navigation" aria-controls="menu" aria-expanded="false">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div id="menu" class="menu" aria-label="Profile and navigation">
+          <button type="button" id="menu-close" aria-label="Close navigation">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
           <div class="container">
             <div class="image">
-              <a href="#"><img src="assets/images/dchaves.jpg" alt="" /></a>
+              <img src="assets/images/dchaves.jpg" alt="Portrait of David Chaves-Fraga" />
             </div>
             <div class="author-content">
-              <h4>David Chaves-Fraga</h4>
-              <span><h6>Assistant Professor</h6></span>
+              <h1>David Chaves-Fraga</h1>
+              <h6>Assistant Professor</h6>
               <p>
               <a href="https://www.usc.gal/en">USC</a><br>
               <a href="https://citius.gal/">CiTIUS@USC</a><br>
               
-              <span><h7>david.chaves at usc.es</h7></span></p>
+              <span class="contact-email">david.chaves at usc.es</span></p>
 
             </div>
-            <nav class="main-nav" role="navigation">
+            <nav class="main-nav" aria-label="Primary">
               <ul class="main-menu">
                 <li><a href="#section1">Home</a></li>
                 <li><a href="#section2">Publications</a></li>
@@ -79,16 +84,16 @@ https://templatemo.com/tm-531-reflux
             <div class="social-network">
               <ul class="social-icons">
                 <li>
-                  <a href="https://twitter.com/dchavesf"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="https://twitter.com/dchavesf" aria-label="David Chaves-Fraga on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="https://github.com/dachafra"><i class="fa fa-github"></i></a>
+                  <a href="https://github.com/dachafra" aria-label="David Chaves-Fraga on GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/david-chaves-fraga"><i class="fa fa-linkedin-in"></i></a>
+                  <a href="https://www.linkedin.com/in/david-chaves-fraga" aria-label="David Chaves-Fraga on LinkedIn"><i class="fa fa-linkedin-in" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                  <a href="https://scholar.google.es/citations?user=VCMjf-AAAAAJ"><i class="fa fa-google"></i></a>
+                  <a href="https://scholar.google.es/citations?user=VCMjf-AAAAAJ" aria-label="David Chaves-Fraga on Google Scholar"><i class="fa fa-google" aria-hidden="true"></i></a>
                 </li>
               
               </ul>
@@ -100,6 +105,7 @@ https://templatemo.com/tm-531-reflux
         </div>
       </div>
 
+      <main id="main-content">
       <section class="section about-me" data-section="section1">
         <div class="container text-dark">
           <div class="section-heading">
@@ -115,23 +121,26 @@ https://templatemo.com/tm-531-reflux
           <div class="row">
             <div class="col-md-6">
                 <div class="right-image">
-                  <img src="assets/images/education.jpeg" alt="" />
+                  <img src="assets/images/education.jpeg" alt="David Chaves-Fraga teaching in a classroom" />
                 </div>
               </div>
             <div class="col-md-6">
               <div class="left-text">
                 <h4><u>Education</u></h4>
                 <div>
-                  <ul>
-                    <div class="mt-3">
-                    <i class="fa fa-graduation-cap"></i> <li class="m-2 mb-3">  Ph.D in Artificial Intelligence (2016-2021)<br> Universidad Politécnica de Madrid, Spain </li>
-                    </div>
-                    <div >
-                    <i class="fa fa-graduation-cap"></i><li class="m-2 mb-3">  Master in Articial Intelligence (2015-2016) <br> Universidad Politécnica de Madrid, Spain</li>
-                    </div>
-                    <div>
-                    <i class="fa fa-graduation-cap"></i><li class="m-2 mb-3"> Bachelor in Computer Science (2011-2015) <br> Universidade de Santiago de Compostela, Spain</li>
-                    </div>
+                  <ul class="credentials-list mt-3">
+                    <li class="mb-3">
+                      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                      <span>Ph.D in Artificial Intelligence (2016-2021)<br>Universidad Politécnica de Madrid, Spain</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                      <span>Master in Artificial Intelligence (2015-2016)<br>Universidad Politécnica de Madrid, Spain</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                      <span>Bachelor in Computer Science (2011-2015)<br>Universidade de Santiago de Compostela, Spain</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -146,49 +155,49 @@ https://templatemo.com/tm-531-reflux
               <div class="col-md-6">
                 <div class="left-text">
                   <h4><u>Experience</u></h4>
-                  <ul style="margin-top: 50px;">
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3">  Assistant Professor (2023-now) <br><a href="https://www.usc.gal/en"> Universidade de Santiago de Compostela</a>, Spain </li>
-                    </div>
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3"> Senior Researcher (2025-now) <br><a href="https://citius.gal/"> CiTIUS</a>, Spain </li>
-                    </div>
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3"> Research Collaborator (2023-2025) <br><a href="https://citius.gal/"> CiTIUS</a>, Spain </li>
-                    </div>
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3"> Research Collaborator (2022-2025) <br><a href="https://dtai.cs.kuleuven.be/"> DTAI (KU Leuven)</a>, Belgium </li>
-                    </div>
-                    <div>
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3"> Postdoctoral researcher (2021-2023) <br><a href="https://oeg.fi.upm.es">Ontology Engineering Group (UPM)</a>, Spain </li>
-                    </div>
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3"> Main Coordinator (2018-2021) <br><a href="https://summerofcode.es">Open Summer of Code</a>, Spain </li>
-                    </div>
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3"> Predoctoral researcher (2016-2021) <br><a href="https://oeg.fi.upm.es">Ontology Engineering Group (UPM)</a>, Spain</li>
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3"> Visiting researcher (4 months - 2019) <br><a href="https://www.tib.eu/en/research-development/scientific-data-management">Scientific Data Management (TIB)</a>, Germany </li>
-                    </div>
-                    <div>
-                    <i class="fa fa-globe"></i>
-                    <li class="m-2 mb-3"> Visiting researcher (3 months - 2017) <br><a href="https://imfd.cl/">Center of Semantic Web Research (UDC)</a>, Chile</li>
-                    </div>
+                  <ul class="credentials-list" style="margin-top: 50px;">
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Assistant Professor (2023-now)<br><a href="https://www.usc.gal/en">Universidade de Santiago de Compostela</a>, Spain</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Senior Researcher (2025-now)<br><a href="https://citius.gal/">CiTIUS</a>, Spain</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Research Collaborator (2023-2025)<br><a href="https://citius.gal/">CiTIUS</a>, Spain</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Research Collaborator (2022-2025)<br><a href="https://dtai.cs.kuleuven.be/">DTAI (KU Leuven)</a>, Belgium</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Postdoctoral researcher (2021-2023)<br><a href="https://oeg.fi.upm.es">Ontology Engineering Group (UPM)</a>, Spain</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Main Coordinator (2018-2021)<br><a href="https://summerofcode.es">Open Summer of Code</a>, Spain</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Predoctoral researcher (2016-2021)<br><a href="https://oeg.fi.upm.es">Ontology Engineering Group (UPM)</a>, Spain</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Visiting researcher (4 months - 2019)<br><a href="https://www.tib.eu/en/research-development/scientific-data-management">Scientific Data Management (TIB)</a>, Germany</span>
+                    </li>
+                    <li class="mb-3">
+                      <i class="fa fa-globe" aria-hidden="true"></i>
+                      <span>Visiting researcher (3 months - 2017)<br><a href="https://imfd.cl/">Center of Semantic Web Research (UDC)</a>, Chile</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="right-image" style="margin-top: 75px;">
-                  <img src="assets/images/experience2.jpeg" alt="" />
+                  <img src="assets/images/experience2.jpeg" alt="David Chaves-Fraga presenting research on knowledge graph construction" />
                 </div>
               </div>
             </div>
@@ -203,7 +212,7 @@ https://templatemo.com/tm-531-reflux
             <div class="line-dec"></div>
             <div id="publications" class="row text-left">
 
-              <button type="button" class="col-md-12 btn btn-info btn-lg mb-2 " data-toggle="collapse" data-target="#ten" aria-expanded="true" aria-controls="nine">2026</button>
+              <button type="button" class="col-md-12 btn btn-info btn-lg mb-2 " data-toggle="collapse" data-target="#ten" aria-expanded="true" aria-controls="ten">2026</button>
 
               <div id="ten" class="collapse show p-2 flex-fill" aria-labelledby="ten" data-parent="#publications"> 
               <div class="row justify-content-md-center">
@@ -213,7 +222,7 @@ https://templatemo.com/tm-531-reflux
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">Normalization-Driven Optimization of Knowledge Graph Creation for Semantically Grounded Information Fusion</h5>
                       <h6 class="card-subtitle text-white p-1 mb-2"> Enrique Iglesias, <u>David Chaves-Fraga</u>, Sören Auer, Maria-Esther Vidal. <br>Information Fusion, 2026</h6>
-                      <a href="" class="btn btn-info">Paper</a>
+                      <a href="./outcomes/papers/2026/iglesias2026normalization.pdf" class="btn btn-info">Paper</a>
                       <a href="https://github.com/SDM-TIB/NormaKG" class="btn btn-info">Code</a>
                     </div>
                 </div>
@@ -231,8 +240,8 @@ https://templatemo.com/tm-531-reflux
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">Constraint-Guided RDF Construction with Provenance</h5>
                       <h6 class="card-subtitle text-white p-1 mb-2"> Xuemin Duan, <u>David Chaves-Fraga</u>, Anastasia Dimou. <br>International Semantic Web Conference, 2026</h6>
-                      <a href="" class="btn btn-info">Paper (soon)</a>
-                      <a href="" class="btn btn-info">Code (soon)</a>
+                      <span class="btn btn-info disabled" aria-disabled="true">Paper (soon)</span>
+                      <span class="btn btn-info disabled" aria-disabled="true">Code (soon)</span>
                     </div>
                 </div>
 
@@ -250,7 +259,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">Exploring Cutting-Edge Data Ecosystems: A Comprehensive Analysis</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2"> Ioannis Chrysakis, <u>David Chaves-Fraga</u>, Giorgos Flouris, Erik Mannens and Anastasia Dimou. <br> Data & Knowledge Engineering, 2026</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"> Ioannis Chrysakis, <u>David Chaves-Fraga</u>, Giorgos Flouris, Erik Mannens and Anastasia Dimou. <br> Data &amp; Knowledge Engineering, 2026</h6>
                       <a href="./outcomes/papers/2026/chrysakis2026exploring.pdf" class="btn btn-info">Paper</a>
                     </div>
                 </div>
@@ -294,9 +303,9 @@ https://templatemo.com/tm-531-reflux
 
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
-                      <h5 class="card-title mb-2 ">Declarative Generation of RDF Collections & Containers from Heterogeneous Data</h5>
+                      <h5 class="card-title mb-2 ">Declarative Generation of RDF Collections &amp; Containers from Heterogeneous Data</h5>
                       <h6 class="card-subtitle text-white p-1 mb-2"> Christophe Debruyne, Souail Jaadari, <u>David Chaves-Fraga</u>. <br>SEMANTiCS, 2025</h6>
-                      <h6 class="card-subtitle text-white p-1 mb-2"> <i>Best Paper Award at Research & Innovation Track</i> </h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"> <i>Best Paper Award at Research &amp; Innovation Track</i> </h6>
                       <a href="./outcomes/papers/2025/debruyne2025declarative.pdf" class="btn btn-info">Paper</a>
                       <a href="https://github.com/citiususc/rml-cc-eval" class="btn btn-info">Code</a>
                     </div>
@@ -305,7 +314,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2">Declarative Generation of RDF-star Graphs from Heterogeneous Data</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2"> Julián Arenas-Guerrero, Ana Iglesias-Molina, <u>David Chaves-Fraga</u>, Daniel Garijo, Oscar Corcho and Anastasia Dimou. <br>Semantic Web Journal - Special Issue on Tools & Systems, 2025</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"> Julián Arenas-Guerrero, Ana Iglesias-Molina, <u>David Chaves-Fraga</u>, Daniel Garijo, Oscar Corcho and Anastasia Dimou. <br>Semantic Web Journal - Special Issue on Tools &amp; Systems, 2025</h6>
                       <a href="./outcomes/papers/2025/arenas2025declarative.pdf" class="btn btn-info">Paper</a>
                       <a href="https://github.com/morph-kgc/morph-kgc/releases/tag/2.0.0" class="btn btn-info">Code</a>
                     </div>
@@ -314,7 +323,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">Empowering the SDM-RDFizer Tool for Scaling Up to Complex Knowledge Graph Creation Pipelines</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2"> Enrique Iglesias, Maria-Esther Vidal, Diego Collarana, <u>David Chaves-Fraga</u>. <br>Semantic Web Journal - Special Issue on Tools & Systems , 2025</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"> Enrique Iglesias, Maria-Esther Vidal, Diego Collarana, <u>David Chaves-Fraga</u>. <br>Semantic Web Journal - Special Issue on Tools &amp; Systems, 2025</h6>
                       <a href="./outcomes/papers/2025/iglesias2025empowering.pdf" class="btn btn-info">Paper</a>
                       <a href="https://github.com/sdm-tib/sdm-rdfizer" class="btn btn-info">Code</a>
                     </div>
@@ -388,7 +397,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">SCOOP-UI: SHACL Shape Extraction in Just a Click!</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2"> Xuemin Duan, <u>David Chaves-Fraga</u>, and Anastasia Dimou. <br>Extended Semantic Web Conference (P&D), 2024</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"> Xuemin Duan, <u>David Chaves-Fraga</u>, and Anastasia Dimou. <br>Extended Semantic Web Conference (P&amp;D), 2024</h6>
                       <a href="./outcomes/papers/2024/duan2024scoopui.pdf" class="btn btn-info">Paper</a>
                       <a href="https://github.com/dtai-kg/SCOOP-UI" class="btn btn-info">Demo</a>
                       <a href="https://demos.citius.usc.es/scoop/" class="btn btn-info">Code</a>
@@ -398,7 +407,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">RMLdoc: Documenting Mapping Rules for Knowledge Graph Construction</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2"> Jhon Toledo, Ana Iglesias-Molina, <u>David Chaves-Fraga</u>, and Daniel Garijo. <br>Extended Semantic Web Conference (P&D), 2024</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"> Jhon Toledo, Ana Iglesias-Molina, <u>David Chaves-Fraga</u>, and Daniel Garijo. <br>Extended Semantic Web Conference (P&amp;D), 2024</h6>
                       <a href="./outcomes/papers/2024/toledo2024rmldoc.pdf" class="btn btn-info">Paper</a>
                       <a href="https://github.com/oeg-upm/rmldoc" class="btn btn-info">Code</a>
                     </div>
@@ -407,7 +416,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">When Ontologies met Knowledge Graphs: Tale of a Methodology</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2"> Romana Pernisch, María Poveda-Villalón, Diego Conde-Herreros, <u>David Chaves-Fraga</u>, and Lise Stork. <br>Extended Semantic Web Conference (P&D), 2024</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"> Romana Pernisch, María Poveda-Villalón, Diego Conde-Herreros, <u>David Chaves-Fraga</u>, and Lise Stork. <br>Extended Semantic Web Conference (P&amp;D), 2024</h6>
                       <a href="./outcomes/papers/2024/pernisch2024when.pdf" class="btn btn-info">Paper</a>
                     </div>
                 </div>
@@ -435,7 +444,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2">The RML Ontology: A Community-Driven Modular Redesign After a Decade of Experience in Mapping Heterogeneous Data to RDF</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2"> Ana Iglesias-Molina, Dylan Van Assche, Julián Arenas-Guerrero, Ben De Meester, Christophe Debruyne, Samaneh Jozashoori, Pano Maria, Franck Michel, <u>David Chaves-Fraga</u>, and Anastasia Dimou. <br>International Semantic Web Confernece, 2023</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"> Ana Iglesias-Molina, Dylan Van Assche, Julián Arenas-Guerrero, Ben De Meester, Christophe Debruyne, Samaneh Jozashoori, Pano Maria, Franck Michel, <u>David Chaves-Fraga</u>, and Anastasia Dimou. <br>International Semantic Web Conference, 2023</h6>
                       <h6 class="card-subtitle text-white p-1 mb-2"> 
                       <i>Nominated for the Best Paper Award in the Resources Track</i></h6>
                       <a href="./outcomes/papers/2023/iglesias2023rml.pdf" class="btn btn-info">Paper</a>
@@ -520,7 +529,7 @@ https://templatemo.com/tm-531-reflux
 
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
-                      <h5 class="card-title mb-2 ">Declarative Description of Knowledge Graphs Construction Automation: Status & Challenges.</h5>
+                      <h5 class="card-title mb-2 ">Declarative Description of Knowledge Graphs Construction Automation: Status &amp; Challenges.</h5>
                       <h6 class="card-subtitle text-white p-1 mb-2"> <u>David Chaves-Fraga</u>, Anastasia Dimou. <br>3rd Edition of the Knowledge Graph Construction Workshop co-located with ESWC, 2022</h6>
                       <a href="./outcomes/papers/2022/chaves2022declarative.pdf" class="btn btn-info">Paper</a>
                     </div>
@@ -576,7 +585,7 @@ https://templatemo.com/tm-531-reflux
 
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
-                      <h5 class="card-title mb-2 ">RML-star: A Declarative Mapping Languagefor RDF-star Generation</h5>
+                      <h5 class="card-title mb-2 ">RML-star: A Declarative Mapping Language for RDF-star Generation</h5>
                       <h6 class="card-subtitle text-white p-1 mb-2">Thomas Delva, Julián Arenas-Guerrero, Ana Iglesias-Molina, Oscar Corcho, David Chaves-Fraga, and Anastasia Dimou <br>International Semantic Web Conference Demos, 2021</h6>
                       <a href="./outcomes/papers/2021/delva2021rmlstar.pdf" class="btn btn-info">Paper</a>
                       <a href="https://w3id.org/kg-construct/rml-star" class="btn btn-info">Specification</a>
@@ -643,7 +652,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">SDM-RDFizer: An RML Interpreter for the Efficient Creation of RDF Knowledge Graphs</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2">Enrique Iglesias, Samaneh Jozashoori, <u>David Chaves-Fraga</u>, Diego Collarana, Maria-Esther Vidal <br>International Conference on Information & Knowledge Management, 2020</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2">Enrique Iglesias, Samaneh Jozashoori, <u>David Chaves-Fraga</u>, Diego Collarana, Maria-Esther Vidal <br>International Conference on Information &amp; Knowledge Management, 2020</h6>
                       <a href="./outcomes/papers/2020/iglesias2020sdm.pdf" class="btn btn-info">Paper</a>
                       <a href="https://github.com/SDM-TIB/SDM-RDFizer" class="btn btn-info">Code</a>
                     </div>
@@ -759,7 +768,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">SAD Generator: Eating Our Own Dog Food to Generate KGs and Websites for Academic Events</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2">Pieter Heyvaert, <u>David Chaves-Fraga</u>, Freddy Priyatna, Juan Sequeda, Anastasia Dimou. <br>European Semantic Web Conference (Posters & Demos), 2019</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2">Pieter Heyvaert, <u>David Chaves-Fraga</u>, Freddy Priyatna, Juan Sequeda, Anastasia Dimou. <br>European Semantic Web Conference (Posters &amp; Demos), 2019</h6>
                       <a href="./outcomes/papers/2019/heyvaert2019sad.pdf" class="btn btn-info">Paper</a>
                       <a href="https://github.com/kgb-workshop/sad-generator" class="btn btn-info">Code</a>
                     </div>
@@ -812,7 +821,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">Virtual Statistics Knowledge Graph Generation from CSV files</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2"><u>David Chaves-Fraga</u>, Freddy Priyatna, Idafen Santana-Pérez, Óscar Corcho. <br>International Workshop on Semantic Statistics co-located woth 17th ISWC, 2018</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2"><u>David Chaves-Fraga</u>, Freddy Priyatna, Idafen Santana-Pérez, Óscar Corcho. <br>International Workshop on Semantic Statistics co-located with the 17th ISWC, 2018</h6>
                       <a href="./outcomes/papers/2018/chaves2018virtual/index.html" class="btn btn-info">Paper</a>
                       <a href="https://github.com/oeg-upm/rmlc-statistic" class="btn btn-info">Code</a>
                     </div>
@@ -830,7 +839,7 @@ https://templatemo.com/tm-531-reflux
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">The Jedi Approach: Using The Force to Solve Linked Data Incompleteness.</h5>
                       <h6 class="card-subtitle text-white p-1 mb-2">Valentina Anita Carriero, <u>David Chaves-Fraga</u>, Arnaud Grall, Lars Heling, Subhi Issa, Thomas Minier, Alberto Moya Loustaunau. <br>International Semantic Web Summer School, 2018</h6>
-                      <a href="./outcomes/papers/2018/carreiro2018jedi.pdf" class="btn btn-info">Paper</a>
+                      <a href="./outcomes/papers/2018/carriero2018jedi.pdf" class="btn btn-info">Paper</a>
                     </div>
                 </div>
  
@@ -848,7 +857,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="card bg-danger text-white rounded mb-3">
                     <div itemscope itemtype="https://schema.org/ScholarlyArticle" class="card-body">
                       <h5 class="card-title mb-2 ">Providing Reliable Access to Real-Time and Historic Public Transport Data Using Linked Connections.</h5>
-                      <h6 class="card-subtitle text-white p-1 mb-2">Julián Rojas, <u>David Chaves-Fraga</u>, Pieter Colpaert, Ruben Verborgh, Erik Mannens. <br>International Semantic Web Conference (Posters & Demos), 2017</h6>
+                      <h6 class="card-subtitle text-white p-1 mb-2">Julián Rojas, <u>David Chaves-Fraga</u>, Pieter Colpaert, Ruben Verborgh, Erik Mannens. <br>International Semantic Web Conference (Posters &amp; Demos), 2017</h6>
                       <a href="./outcomes/papers/2017/rojas2017providing.pdf" class="btn btn-info">Paper</a>
                     </div>
                 </div>
@@ -893,7 +902,7 @@ https://templatemo.com/tm-531-reflux
 
               <button type="button" class="col-md-12 btn btn-info btn-lg mb-2 " data-toggle="collapse" data-target="#tten" aria-expanded="true" aria-controls="tten">2026</button>
 
-              <div id="tnine" class="collapse flex-fill show p-2" aria-labelledby="tten" data-parent="#talks">
+              <div id="tten" class="collapse flex-fill show p-2" aria-label="Talks from 2026" data-parent="#talks">
               <div class="row justify-content-md-center">
               <div class="col-md-12">
 
@@ -913,7 +922,7 @@ https://templatemo.com/tm-531-reflux
 
               <button type="button" class="col-md-12 btn btn-info btn-lg mb-2 " data-toggle="collapse" data-target="#tnine" aria-expanded="false" aria-controls="tnine">2025</button>
 
-              <div id="tnine" class="collapse flex-fill p-2" aria-labelledby="tnine" data-parent="#talks">
+              <div id="tnine" class="collapse flex-fill p-2" aria-label="Talks from 2025" data-parent="#talks">
               <div class="row justify-content-md-center">
               <div class="col-md-12">
 
@@ -931,7 +940,7 @@ https://templatemo.com/tm-531-reflux
               </div>
               </div>
 
-              <button type="button" class="col-md-12 btn btn-info btn-lg mb-2 " data-toggle="collapse" data-target="#teight" aria-expanded="flase" aria-controls="teight">2024</button>
+              <button type="button" class="col-md-12 btn btn-info btn-lg mb-2 " data-toggle="collapse" data-target="#teight" aria-expanded="false" aria-controls="teight">2024</button>
 
               <div id="teight" class="collapse flex-fill p-2" aria-labelledby="teight" data-parent="#talks">
               <div class="row justify-content-md-center">
@@ -1041,7 +1050,7 @@ https://templatemo.com/tm-531-reflux
 
                 <div class="card bg-danger text-white rounded mb-3">
                   <div class="card-body">
-                    <h5 class="card-title mb-2">Declarative Description of Knowledge Graphs Construction Automation: Status & Challenges.</h5>
+                    <h5 class="card-title mb-2">Declarative Description of Knowledge Graphs Construction Automation: Status &amp; Challenges.</h5>
                     <h6 class="card-subtitle text-white p-1 mb-2"> <u>David Chaves-Fraga</u>, Anastasia Dimou. <br>3rd Edition of the Knowledge Graph Construction Workshop co-located with ESWC, 2022</h6>
                      <a href="./outcomes/presentations/2022/declarative2022kgcw.pdf" class="btn btn-info">Slides</a>
                   </div>
@@ -1387,9 +1396,9 @@ https://templatemo.com/tm-531-reflux
             <div class="row justify-content-around">
                 <div class="card bg-danger text-white rounded mb-3 col-md-5">
                     <div class="card-body">
-                      <h6 class="card-title mb-2 d-flex justify-content-md-center text-center">Chair of Workshops&Tutorials at SEMANTiCS / 2025</h6>
+                      <h6 class="card-title mb-2 d-flex justify-content-md-center text-center">Chair of Workshops &amp; Tutorials at SEMANTiCS / 2025</h6>
                       <div class="mt-3 d-flex justify-content-md-center">
-                        <a href="https://2025-eu.semantics.cc/" class="btn btn-info">SEMTiCS Website</a> 
+                        <a href="https://2025-eu.semantics.cc/" class="btn btn-info">SEMANTiCS Website</a>
                       </div>
                     </div>
                 </div>
@@ -1437,7 +1446,7 @@ https://templatemo.com/tm-531-reflux
                     <div class="card-body">
                       <h6 class="card-title mb-2 d-flex justify-content-md-center text-center">Chair of Posters and Demos at SEMANTiCS / 2022</h6>
                       <div class="mt-3 d-flex justify-content-md-center">
-                        <a href="https://2022-eu.semantics.cc/" class="btn btn-info">SEMTiCS Website</a>
+                        <a href="https://2022-eu.semantics.cc/" class="btn btn-info">SEMANTiCS Website</a>
                       </div>
                     </div>
                 </div>
@@ -1511,11 +1520,25 @@ https://templatemo.com/tm-531-reflux
                 <div class="col-md-10 mb-5">
 
                   <div class="card bg-danger text-white justify-content-around rounded mb-3">
+                    <div class="card-body">
+                      <h4 class="card-title">SCAILED / 2026-2029</h4>
+                      <h6>EU4Health — SCale-up Biotech AI Innovation by Leveraging Responsible Data Use under the European Health Data Space</h6>
+                    </div>
+                  </div>
+
+                  <div class="card bg-danger text-white justify-content-around rounded mb-3">
+                    <div class="card-body">
+                      <h4 class="card-title">CardiongenIA / 2026-2029</h4>
+                      <h6>Knowledge Graph–based AI for Diagnostic and Prognostic Interpretation of Genetic Tests in Inherited Cardiovascular Diseases</h6>
+                    </div>
+                  </div>
+
+                  <div class="card bg-danger text-white justify-content-around rounded mb-3">
                       <div class="card-body">
                         <h4 class="card-title"> GALA / 2025-2028</h4>
                         <h6>AI Agent Powered by Knowledge Graphs and Large Language Models for Clinical Practice Support</h6>
                         <div class="mt-3"> 
-                        <a class="btn btn-info" href=""> Website (soon) </a>
+                        <span class="btn btn-info" href="https://www.balidea.com/en/project/gala/" aria-disabled="true">Website</span>
                         </div>
                     </div>
                   </div>
@@ -1545,7 +1568,7 @@ https://templatemo.com/tm-531-reflux
                         <h4 class="card-title"> Datos.Gob / 2021</h4>
                         <h6> Spanish national guideline for creating RDF from open data portals using declarative mappings</h6>
                         <div class="mt-3">                          
-                          <a href="https://datos.gob.es/es/documentacion/guia-practica-para-la-publicacion-de-datos-enlazados-en-rdf" class="btn btn-info">Guidline & Videos</a>                      
+                          <a href="https://datos.gob.es/es/documentacion/guia-practica-para-la-publicacion-de-datos-enlazados-en-rdf" class="btn btn-info">Guideline &amp; Videos</a>
                         </div>
                     </div>
                   </div>
@@ -1557,7 +1580,7 @@ https://templatemo.com/tm-531-reflux
                         <h4 class="card-title">  H2020 - SPRINT / 2019-2021</h4>
                         <h6> Semantics for Performant and scalable Interoperability of multimodal Transport</h6>
                         <div class="mt-3">                          
-                           <a href="" class="btn btn-info">Project Website</a>                        
+                           <span class="btn btn-info disabled" aria-disabled="true">Project website unavailable</span>
                         </div>
                     </div>
                   </div>
@@ -1567,7 +1590,7 @@ https://templatemo.com/tm-531-reflux
                         <h4 class="card-title">  Datos 4.0 / 2016-2020</h4>
                         <h6> Spanish National project for using semantic web technologies in data management </h6>
                         <div class="mt-3">                          
-                           <a href="http://www.upm.es/observatorio/vi/index.jsp?pageac=actividad.jsp&id_actividad=247018" class="btn btn-info">Project Info</a>                        
+                           <a href="http://www.upm.es/observatorio/vi/index.jsp?pageac=actividad.jsp&amp;id_actividad=247018" class="btn btn-info">Project Info</a>
                         </div>
                     </div>
                   </div>
@@ -1575,7 +1598,7 @@ https://templatemo.com/tm-531-reflux
                   <div class="card bg-danger text-white justify-content-around rounded mb-3">
                       <div class="card-body">
                         <h4 class="card-title">  EIT-SNAP / 2016-2020</h4>
-                        <h6> Transforming transport data into EU compilance with semantic web technologies </h6>
+                        <h6> Transforming transport data into EU compliance with semantic web technologies </h6>
                         <div class="mt-3">                          
                            <a href="https://snap-project.eu/" class="btn btn-info">Project Website</a>                        
                         </div>
@@ -1623,9 +1646,9 @@ https://templatemo.com/tm-531-reflux
                             <span class="badge badge-light text-dark">MSC Thesis</span>
                         </div>
                         <div class="small opacity-75 mb-2"><i>Master in AI (2025–2026)</i></div>
-                        <div class="mb-2">Automatic Generation of Declarative Mapping Rules for Knowledge grph Construction</div>
+                        <div class="mb-2">Automatic Generation of Declarative Mapping Rules for Knowledge Graph Construction</div>
                         <div class="mt-auto">
-                            <a href="" class="btn btn-info btn-sm">Code (soon)</a>
+                            <span class="btn btn-info btn-sm disabled" aria-disabled="true">Code (soon)</span>
                         </div>
                     </div>
                 </div>
@@ -1723,7 +1746,7 @@ https://templatemo.com/tm-531-reflux
                   <div class="card bg-danger text-white justify-content-around rounded mb-3">
                       <div class="card-body">
                         <h4 class="card-title"> Year 2025</h4>
-                        <h6> Summary of reserach activities in 2025</h6>
+                        <h6> Summary of research activities in 2025</h6>
 
                         <div class="mt-3">
                           <a href="https://davidchavesfraga.com/blog/2025.html" class="btn btn-info">Resumen (Original in Spanish)</a>
@@ -1735,7 +1758,7 @@ https://templatemo.com/tm-531-reflux
                   <div class="card bg-danger text-white justify-content-around rounded mb-3">
                       <div class="card-body">
                         <h4 class="card-title"> Year 2024</h4>
-                        <h6> Summary of reserach activities in 2024</h6>
+                        <h6> Summary of research activities in 2024</h6>
 
                         <div class="mt-3">
                           <a href="https://davidchavesfraga.com/blog/2024.html" class="btn btn-info">Resumen (Original in Spanish)</a>
@@ -1783,6 +1806,7 @@ https://templatemo.com/tm-531-reflux
         </div>
       </section>
 
+      </main>
     </div>
 
     <!-- Scripts -->

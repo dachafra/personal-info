@@ -2,27 +2,63 @@
   var toggle = document.getElementById("menu-toggle");
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
+  var mobileMenuQuery = window.matchMedia("(max-width: 845px)");
 
-  toggle.addEventListener("click", function(e) {
-    if (menu.classList.contains("open")) {
-      menu.classList.remove("open");
+  var updateMenuAccessibility = function() {
+    if (mobileMenuQuery.matches) {
+      var isOpen = menu.classList.contains("open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      menu.setAttribute("aria-hidden", String(!isOpen));
+      menu.inert = !isOpen;
     } else {
-      menu.classList.add("open");
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+      menu.removeAttribute("aria-hidden");
+      menu.inert = false;
+    }
+  };
+
+  var closeMenu = function(returnFocus) {
+    menu.classList.remove("open");
+    updateMenuAccessibility();
+    if (returnFocus && mobileMenuQuery.matches) {
+      toggle.focus();
+    }
+  };
+
+  var openMenu = function() {
+    menu.classList.add("open");
+    updateMenuAccessibility();
+    close.focus();
+  };
+
+  toggle.addEventListener("click", function() {
+    if (menu.classList.contains("open")) {
+      closeMenu(true);
+    } else {
+      openMenu();
     }
   });
 
-  close.addEventListener("click", function(e) {
-    menu.classList.remove("open");
+  close.addEventListener("click", function() {
+    closeMenu(true);
   });
 
   // Close menu after click on smaller screens
-  $(window).on("resize", function() {
-    if ($(window).width() < 846) {
-      $(".main-menu a").on("click", function() {
-        menu.classList.remove("open");
-      });
+  $(".main-menu a").on("click", function() {
+    if (mobileMenuQuery.matches) {
+      closeMenu(false);
     }
   });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape" && menu.classList.contains("open")) {
+      closeMenu(true);
+    }
+  });
+
+  window.addEventListener("resize", updateMenuAccessibility);
+  updateMenuAccessibility();
 
   $(".owl-carousel").owlCarousel({
     items: 4,
