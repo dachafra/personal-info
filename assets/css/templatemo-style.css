@@ -923,13 +923,105 @@ section.contact-me {
     max-width: 680px;
 }
 
-.alumni-group {
-    margin-top: 28px;
+.supervision-track {
+    border: 1px solid rgba(164, 63, 73, 0.16);
+    border-radius: 14px;
+    margin-top: 30px;
+    padding: 26px;
     text-align: left;
 }
 
-.alumni-group:first-of-type {
-    margin-top: 20px;
+.supervision-track-doctoral {
+    background: rgba(164, 63, 73, 0.06);
+    border-top: 4px solid #a43f49;
+}
+
+.supervision-track-theses {
+    background: #fff;
+}
+
+.supervision-track-heading {
+    margin-bottom: 22px;
+}
+
+.supervision-track-heading .subsection-title {
+    margin: 3px 0 5px;
+}
+
+.supervision-track-heading p {
+    color: #5f5f5f;
+    margin: 0;
+}
+
+.supervision-track-kicker {
+    color: #a43f49;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.alumni-group {
+    margin-top: 26px;
+    text-align: left;
+}
+
+.supervision-track-theses .alumni-group:first-of-type {
+    margin-top: 0;
+}
+
+.academic-year {
+    align-items: center;
+    cursor: pointer;
+    color: #6b343a;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 13px 15px;
+    transition: background-color 0.2s ease;
+}
+
+.academic-year::-webkit-details-marker {
+    display: none;
+}
+
+.academic-year::before {
+    content: "\002B";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1;
+    width: 16px;
+}
+
+.academic-year-group[open] .academic-year::before {
+    content: "\2212";
+}
+
+.academic-year:hover,
+.academic-year:focus-visible {
+    background: rgba(164, 63, 73, 0.07);
+    outline: none;
+}
+
+.academic-year-count {
+    color: #777;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: auto;
+}
+
+.academic-year-group {
+    border: 1px solid rgba(164, 63, 73, 0.18);
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.academic-year-content {
+    border-top: 1px solid rgba(164, 63, 73, 0.14);
+    padding: 14px;
 }
 
 .alumni-grid {
@@ -980,7 +1072,30 @@ section.contact-me {
 }
 
 .doctoral-card {
-    min-height: 132px;
+    align-items: center;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: minmax(150px, 0.9fr) minmax(240px, 1.5fr) auto;
+    min-height: 0;
+    padding: 14px 18px;
+}
+
+.doctoral-grid {
+    grid-template-columns: 1fr;
+}
+
+.doctoral-card .alumni-card-header {
+    min-width: 0;
+}
+
+.doctoral-card .alumni-program,
+.doctoral-card .alumni-period {
+    margin: 0;
+}
+
+.doctoral-card .alumni-period {
+    min-width: 105px;
+    text-align: right;
 }
 
 .alumni-period {
@@ -1095,9 +1210,25 @@ section.contact-me {
     .alumni-group {
         margin-top: 24px;
     }
+    .supervision-track {
+        margin-top: 24px;
+        padding: 20px 16px;
+    }
     .alumni-card {
         min-height: 0;
         padding: 18px;
+    }
+    .doctoral-card {
+        align-items: flex-start;
+        gap: 5px;
+        grid-template-columns: 1fr;
+    }
+    .doctoral-card .alumni-period {
+        margin-top: 3px;
+        text-align: left;
+    }
+    .academic-year-content {
+        padding: 12px;
     }
     .right-image-post {
         margin-top: 40px;
